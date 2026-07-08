@@ -1,0 +1,327 @@
+import type { Association } from "@/types/domain";
+
+export const associations: Association[] = [
+  {
+    id: "racines-urbaines",
+    name: "Racines Urbaines",
+    tagline: "Faire pousser la ville, ensemble.",
+    description:
+      "Nous transformons les friches et toits parisiens en jardins partagés, avec les habitants du quartier. Chaque potager est une école du vivant.",
+    cause: "ecologie",
+    causeLabel: "Écologie urbaine",
+    city: "Paris",
+    size: "Moyenne",
+    founded: 2017,
+    values: ["ecologie", "collectif", "transmission"],
+    workStyles: ["terrain", "creatif"],
+    skillsNeeded: ["terrain", "evenement", "communication"],
+    commitment: "hebdo",
+    openTo: ["Bénévoles réguliers", "Mécénat de compétences", "Partenariats entreprises"],
+    culture:
+      "On bosse les mains dans la terre, en horizontalité. Réunions courtes, décisions au consentement, et un goûter à 16h le samedi.",
+    whyJoin:
+      "Apprendre la permaculture sans diplôme, rencontrer ses voisins, et voir un toit goudronné devenir un jardin en six mois.",
+    openMissions: [
+      { title: "Animateur·rice jardin du dimanche", type: "Bénévolat", commitment: "hebdo", remote: false },
+      { title: "Refonte du site web", type: "Mécénat de compétences", commitment: "ponctuel", remote: true },
+      { title: "Coordination événement Fête des récoltes", type: "Bénévolat", commitment: "ponctuel", remote: false },
+    ],
+    team: [
+      { name: "Yasmine B.", role: "Co-fondatrice", initials: "YB" },
+      { name: "Marc T.", role: "Référent jardins", initials: "MT" },
+      { name: "Léa R.", role: "Coordinatrice bénévoles", initials: "LR" },
+    ],
+    emoji: "🌱",
+    gradient: "warm",
+    highlights: ["12 jardins actifs", "480 bénévoles", "8 quartiers", "1.2t récoltées/an"],
+  },
+  {
+    id: "code-pour-tous",
+    name: "Code pour Tou·te·s",
+    tagline: "Le numérique ne devrait exclure personne.",
+    description:
+      "Ateliers gratuits de programmation pour ados de quartiers populaires et reconversions adultes. On forme aussi des mentors.",
+    cause: "tech-citoyenne",
+    causeLabel: "Tech citoyenne",
+    city: "Saint-Denis",
+    size: "Moyenne",
+    founded: 2019,
+    values: ["inclusion", "transmission", "innovation"],
+    workStyles: ["bureau", "creatif", "remote"],
+    skillsNeeded: ["tech", "mentorat", "communication"],
+    commitment: "mensuel",
+    openTo: ["Bénévoles", "Mécénat", "Stages", "Service civique"],
+    culture:
+      "Asynchrone-friendly, doc partagée, pair-programming sur Discord. On valorise l'échec comme étape d'apprentissage.",
+    whyJoin:
+      "Voir un·e ado coder son premier jeu et comprendre qu'iel a sa place dans la tech : c'est le genre de moment qui te change.",
+    openMissions: [
+      { title: "Mentor·e Python (1 samedi/mois)", type: "Bénévolat", commitment: "mensuel", remote: false },
+      { title: "Dev front pour notre LMS", type: "Mécénat de compétences", commitment: "ponctuel", remote: true },
+      { title: "Service civique communication", type: "Service civique", commitment: "intense", remote: false },
+    ],
+    team: [
+      { name: "Sofia M.", role: "Directrice", initials: "SM" },
+      { name: "Karim D.", role: "Lead pédagogie", initials: "KD" },
+    ],
+    emoji: "💻",
+    gradient: "magenta",
+    highlights: ["1 200 jeunes formés", "85 mentors", "6 antennes", "92% satisfaction"],
+  },
+  {
+    id: "scene-ouverte",
+    name: "Scène Ouverte",
+    tagline: "La culture là où on ne l'attend pas.",
+    description:
+      "Concerts, lectures et performances dans les EHPAD, hôpitaux et centres d'accueil. La scène vient à toi quand tu ne peux plus venir à elle.",
+    cause: "culture",
+    causeLabel: "Culture & lien social",
+    city: "Lyon",
+    size: "Petite",
+    founded: 2021,
+    values: ["creativite", "convivialite", "inclusion"],
+    workStyles: ["evenementiel", "creatif", "terrain"],
+    skillsNeeded: ["evenement", "communication", "logistique"],
+    commitment: "ponctuel",
+    openTo: ["Bénévoles ponctuels", "Artistes", "Partenariats culturels"],
+    culture:
+      "Petite équipe soudée, beaucoup de WhatsApp et de cafés. Tout le monde participe à la prog, du roadie au violoncelliste.",
+    whyJoin:
+      "Tu n'as pas besoin d'être musicien·ne. Tu as besoin d'aimer voir les yeux d'une grand-mère se rallumer pendant un solo de jazz.",
+    openMissions: [
+      { title: "Régisseur·se son week-end", type: "Bénévolat", commitment: "ponctuel", remote: false },
+      { title: "Photographe événements", type: "Bénévolat", commitment: "ponctuel", remote: false },
+    ],
+    team: [
+      { name: "Jules P.", role: "Programmation", initials: "JP" },
+      { name: "Inès K.", role: "Production", initials: "IK" },
+    ],
+    emoji: "🎷",
+    gradient: "sunset",
+    highlights: ["180 concerts/an", "35 artistes partenaires", "22 lieux", "3 villes"],
+  },
+  {
+    id: "refuge-patte",
+    name: "Refuge La Patte Tendue",
+    tagline: "Une seconde chance, à quatre pattes.",
+    description:
+      "Refuge familial pour chiens et chats abandonnés, avec un fort programme d'accueil en famille relais et de stérilisation des chats errants.",
+    cause: "animaux",
+    causeLabel: "Protection animale",
+    city: "Bordeaux",
+    size: "Petite",
+    founded: 2014,
+    values: ["convivialite", "rigueur", "collectif"],
+    workStyles: ["terrain", "administratif"],
+    skillsNeeded: ["terrain", "logistique", "collecte", "communication"],
+    commitment: "hebdo",
+    openTo: ["Bénévoles", "Familles d'accueil", "Dons en nature"],
+    culture:
+      "Très opérationnel, ça démarre tôt le matin. Bienveillant mais cash : les animaux d'abord, l'ego après.",
+    whyJoin:
+      "Tu repars crevé·e mais rempli·e. Et un jour tu vois Pixel, le chiot qu'on a sorti d'une caisse, partir avec sa nouvelle famille.",
+    openMissions: [
+      { title: "Promeneur·se chiens (2h/semaine)", type: "Bénévolat", commitment: "hebdo", remote: false },
+      { title: "Comptable bénévole", type: "Mécénat de compétences", commitment: "mensuel", remote: true },
+    ],
+    team: [
+      { name: "Brigitte L.", role: "Présidente", initials: "BL" },
+      { name: "Tom V.", role: "Soigneur principal", initials: "TV" },
+    ],
+    emoji: "🐾",
+    gradient: "warm",
+    highlights: ["320 adoptions/an", "60 familles relais", "1 200 stérilisations", "98% placement"],
+  },
+  {
+    id: "voix-libres",
+    name: "Voix Libres",
+    tagline: "Personne ne devrait choisir entre se taire et avoir peur.",
+    description:
+      "Ligne d'écoute et accompagnement juridique pour les femmes victimes de violences. 100% gratuit, 100% confidentiel.",
+    cause: "droits",
+    causeLabel: "Droits & justice",
+    city: "Marseille",
+    size: "Moyenne",
+    founded: 2010,
+    values: ["justice", "inclusion", "rigueur"],
+    workStyles: ["bureau", "remote"],
+    skillsNeeded: ["ecoute", "juridique", "communication"],
+    commitment: "hebdo",
+    openTo: ["Bénévoles formé·es", "Avocat·es bénévoles", "Mécénat"],
+    culture:
+      "Cadre strict, supervision obligatoire, formation initiale de 40h. Bienveillance pro, pas de héroïsme.",
+    whyJoin:
+      "Pour faire partie d'un filet de sécurité concret. Aucune compétence requise au départ — la formation est offerte.",
+    openMissions: [
+      { title: "Écoutant·e ligne d'urgence (formé·e)", type: "Bénévolat", commitment: "hebdo", remote: true },
+      { title: "Avocat·e en droit famille (pro bono)", type: "Mécénat de compétences", commitment: "mensuel", remote: false },
+    ],
+    team: [
+      { name: "Naïma B.", role: "Directrice", initials: "NB" },
+      { name: "Claire H.", role: "Coord. juridique", initials: "CH" },
+    ],
+    emoji: "🤝",
+    gradient: "magenta",
+    highlights: ["8 400 appels/an", "150 écoutantes", "62 avocates", "24/7"],
+  },
+  {
+    id: "open-ocean",
+    name: "Open Ocean",
+    tagline: "L'océan parle. On l'écoute, on documente, on agit.",
+    description:
+      "Sciences participatives marines : on forme des plongeurs et marins amateurs à recenser la biodiversité méditerranéenne.",
+    cause: "ecologie",
+    causeLabel: "Biodiversité marine",
+    city: "Nice",
+    size: "Petite",
+    founded: 2020,
+    values: ["ecologie", "rigueur", "innovation"],
+    workStyles: ["terrain", "remote", "creatif"],
+    skillsNeeded: ["tech", "terrain", "communication"],
+    commitment: "ponctuel",
+    openTo: ["Plongeur·ses", "Data scientists", "Partenariats scientifiques"],
+    culture:
+      "Très data-driven, beaucoup de Notion et de cartes interactives. On valorise le doute scientifique et la précision.",
+    whyJoin:
+      "Tu deviens un·e capteur du vivant. Tes observations finissent dans des publis du CNRS et orientent des politiques publiques.",
+    openMissions: [
+      { title: "Plongeur·se observateur·rice (PADI N2 mini)", type: "Bénévolat", commitment: "ponctuel", remote: false },
+      { title: "Data analyst missions saisonnières", type: "Mécénat de compétences", commitment: "ponctuel", remote: true },
+    ],
+    team: [
+      { name: "Hugo M.", role: "Co-fondateur", initials: "HM" },
+      { name: "Estelle G.", role: "Coord. scientifique", initials: "EG" },
+    ],
+    emoji: "🌊",
+    gradient: "sunset",
+    highlights: ["220 observateurs", "14 espèces suivies", "3 publis CNRS", "8 sites"],
+  },
+  {
+    id: "premiers-pas",
+    name: "Premiers Pas",
+    tagline: "Mentorer un·e enfant, c'est changer deux vies.",
+    description:
+      "Mentorat 1-pour-1 entre adultes bénévoles et enfants de 8-14 ans en difficulté scolaire ou familiale. Une heure par semaine, deux ans d'engagement.",
+    cause: "education",
+    causeLabel: "Éducation & mentorat",
+    city: "Lille",
+    size: "Grande",
+    founded: 2008,
+    values: ["transmission", "inclusion", "collectif"],
+    workStyles: ["bureau", "creatif"],
+    skillsNeeded: ["mentorat", "ecoute"],
+    commitment: "hebdo",
+    openTo: ["Mentors", "Mécénat", "Partenariats éducation"],
+    culture:
+      "Process solide, accompagnement psy gratuit pour les mentors, soirées trimestrielles. Engagement long mais entouré.",
+    whyJoin:
+      "Tu offres ce que tu aurais aimé avoir à 12 ans : une oreille adulte qui n'est pas tes parents et qui croit en toi.",
+    openMissions: [
+      { title: "Mentor·e (1h/sem, 2 ans)", type: "Bénévolat", commitment: "hebdo", remote: false },
+      { title: "Coordinateur·rice antenne (stage)", type: "Stage", commitment: "intense", remote: false },
+    ],
+    team: [
+      { name: "Antoine D.", role: "Directeur", initials: "AD" },
+      { name: "Fatou S.", role: "Resp. mentorat", initials: "FS" },
+    ],
+    emoji: "🎓",
+    gradient: "magenta",
+    highlights: ["3 600 binômes actifs", "45 antennes", "+38% notes moy.", "15 ans d'impact"],
+  },
+  {
+    id: "courir-ensemble",
+    name: "Courir Ensemble",
+    tagline: "Le sport comme prétexte à la rencontre.",
+    description:
+      "Running club inclusif : on accompagne des coureur·ses en situation de handicap visuel ou de précarité. Pas de chrono, juste du collectif.",
+    cause: "sport",
+    causeLabel: "Sport & inclusion",
+    city: "Toulouse",
+    size: "Petite",
+    founded: 2018,
+    values: ["convivialite", "inclusion", "collectif"],
+    workStyles: ["terrain", "evenementiel"],
+    skillsNeeded: ["terrain", "evenement"],
+    commitment: "hebdo",
+    openTo: ["Bénévoles guides", "Coureur·ses partenaires"],
+    culture:
+      "Détendu, beaucoup de blagues, brunch après chaque sortie longue. Aucun niveau requis, juste l'envie de partager.",
+    whyJoin:
+      "Tu cours déjà ? Cours utile. Tu ne cours pas ? Marche utile. C'est aussi simple que ça.",
+    openMissions: [
+      { title: "Guide-coureur·se (formation 1 jour)", type: "Bénévolat", commitment: "hebdo", remote: false },
+      { title: "Co-organisation du 10km solidaire", type: "Bénévolat", commitment: "ponctuel", remote: false },
+    ],
+    team: [
+      { name: "Paul N.", role: "Co-fondateur", initials: "PN" },
+      { name: "Sarah B.", role: "Référente inclusion", initials: "SB" },
+    ],
+    emoji: "👟",
+    gradient: "warm",
+    highlights: ["140 binômes", "32 sorties/an", "1 course solidaire", "100% gratuit"],
+  },
+  {
+    id: "horizon-sante",
+    name: "Horizon Santé",
+    tagline: "Soigner aussi celles et ceux qu'on oublie.",
+    description:
+      "Bus médical mobile pour les personnes sans-abri et en grande précarité. Médecine générale, soins infirmiers, écoute.",
+    cause: "sante",
+    causeLabel: "Santé solidaire",
+    city: "Paris",
+    size: "Moyenne",
+    founded: 2012,
+    values: ["justice", "rigueur", "inclusion"],
+    workStyles: ["terrain", "administratif"],
+    skillsNeeded: ["terrain", "ecoute", "logistique", "collecte"],
+    commitment: "mensuel",
+    openTo: ["Soignant·es bénévoles", "Bénévoles non-soignant·es", "Mécénat médical"],
+    culture:
+      "Cadre médical pro, mais accueil chaleureux. Briefs/débriefs systématiques, supervision pour éviter l'usure.",
+    whyJoin:
+      "Que tu sois infirmière retraitée ou totalement néophyte, il y a une place. La présence compte autant que le soin.",
+    openMissions: [
+      { title: "Médecin bénévole (1 maraude/mois)", type: "Bénévolat", commitment: "mensuel", remote: false },
+      { title: "Bénévole accueil maraude", type: "Bénévolat", commitment: "mensuel", remote: false },
+    ],
+    team: [
+      { name: "Dr. Élise V.", role: "Directrice médicale", initials: "ÉV" },
+      { name: "Mehdi A.", role: "Coord. maraudes", initials: "MA" },
+    ],
+    emoji: "⛑️",
+    gradient: "magenta",
+    highlights: ["6 200 consult./an", "80 soignants", "4 maraudes/sem", "12 ans"],
+  },
+  {
+    id: "bibliotheque-monde",
+    name: "Bibliothèque-Monde",
+    tagline: "Apprendre le français par les histoires qu'on aime.",
+    description:
+      "Cours de français pour personnes exilées, à partir de leurs propres récits, contes et chansons. La langue d'accueil rencontre les langues d'origine.",
+    cause: "international",
+    causeLabel: "Solidarité internationale",
+    city: "Strasbourg",
+    size: "Petite",
+    founded: 2016,
+    values: ["transmission", "inclusion", "creativite"],
+    workStyles: ["bureau", "creatif", "evenementiel"],
+    skillsNeeded: ["mentorat", "communication", "evenement"],
+    commitment: "hebdo",
+    openTo: ["Bénévoles formateur·rices", "Traducteur·rices", "Stages FLE"],
+    culture:
+      "Pédagogie bienveillante, échanges interculturels constants, repas partagé une fois par mois.",
+    whyJoin:
+      "Tu enseignes le français mais tu apprends 12 cultures. Aucun diplôme requis, on te forme.",
+    openMissions: [
+      { title: "Animateur·rice atelier conversation", type: "Bénévolat", commitment: "hebdo", remote: false },
+      { title: "Stage coordination pédagogique (FLE)", type: "Stage", commitment: "intense", remote: false },
+    ],
+    team: [
+      { name: "Amal T.", role: "Coordinatrice", initials: "AT" },
+      { name: "Lucas G.", role: "Resp. pédagogie", initials: "LG" },
+    ],
+    emoji: "📚",
+    gradient: "sunset",
+    highlights: ["280 apprenant·es", "45 nationalités", "12 ateliers/sem", "8 ans"],
+  },
+];
